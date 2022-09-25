@@ -12,6 +12,7 @@ function App() {
             <Header/>
             <Routes>
                 <Route path="/" element={<Coins/>}></Route>
+
                 <Route path="/trending" element={<Trending/>}>
                     <Route path=":id" element={<Coin/>}></Route>
                 </Route>
