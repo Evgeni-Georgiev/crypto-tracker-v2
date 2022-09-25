@@ -18,7 +18,7 @@ export function Trending() {
                 setGetTrends(list)
             })
         })
-    }, [])
+    }, [getTrends])
 
     const handleChange = (event) => {
         return setSearch(event.target.value);

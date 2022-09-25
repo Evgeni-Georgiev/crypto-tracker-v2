@@ -10,20 +10,11 @@ export function Coins() {
     const [search, setSearch] = useState('');
     const [coins, setCoins] = useState([]);
 
-    const getMarket = () => {
+    useEffect(() => {
         getMarketCoins().then(response => {
             setCoins(response.data)
         }).catch(error => console.log(error))
-    }
-
-    useEffect(() => {
-        getMarket();
-        const interval = setInterval(() => {
-            getMarket();
-        }, 10000);
-        return () => clearInterval(interval);
-
-    }, []);
+    }, [coins]);
 
     const handleChange = (event) => {
         return setSearch(event.target.value);
