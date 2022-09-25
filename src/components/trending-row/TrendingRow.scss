@@ -1,0 +1,17 @@
+.coin-row {
+  display: grid;
+  //grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 150px);
+}
+
+@media screen and (max-width: 720px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+//.coin-row {
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//}
