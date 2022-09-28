@@ -6,3 +6,19 @@
 .coin-name {
   margin: 0;
 }
+
+@media screen and (max-width: 720px) {
+
+  .heading {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+
+  .heading {
+    display: flex;
+  }
+
+}

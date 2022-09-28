@@ -15,7 +15,7 @@ export function CoinRow({coins}) {
                 (<p className="coin-percent green">{coins.price_change_percentage_24h.toFixed(2)}%</p>)
             }
             <p className='hide-mobile'>${coins.total_volume.toLocaleString()}</p>
-            <p className='hide-mobile'>${coins.market_cap.toLocaleString()}</p>
+            <p className='hide-mobile market_cap'>${coins.market_cap.toLocaleString()}</p>
         </div>
     );
 }

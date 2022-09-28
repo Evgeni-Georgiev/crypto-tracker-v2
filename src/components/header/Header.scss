@@ -20,3 +20,11 @@
 .purple {
   color: #6900ff;
 }
+
+@media screen and (max-width: 720px) {
+
+  .headers {
+    display: block;
+  }
+
+}
